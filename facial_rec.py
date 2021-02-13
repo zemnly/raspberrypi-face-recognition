@@ -20,7 +20,7 @@ encodingsP = "encodings.pickle"
 # cascade for face detection
 print("[INFO] loading encodings + face detector...")
 data = pickle.loads(open(encodingsP, "rb").read())
-detector = cv2.CascadeClassifier(haarcascade_frontalface_default.xml)
+detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 # initialize the video stream and allow the camera sensor to warm up
 print("[INFO] starting video stream...")
